@@ -631,12 +631,13 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 446b3285-fd85-4a16-99f5-7b912f7e7281
-  projectName: Game Jam 16-04
-  organizationId: markodevil
+  cloudProjectId: f942583e-43c1-4ab1-86fe-6de955c75cdc
+  projectName: Game Jam 16-04 (1)
+  organizationId: umbra-ignis
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
