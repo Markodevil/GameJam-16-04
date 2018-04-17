@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33103474850075320}
   - component: {fileID: 23247977801017684}
   - component: {fileID: 95285449657212048}
+  - component: {fileID: 65102692632602096}
   m_Layer: 0
   m_Name: tire
   m_TagString: Obstacle
@@ -35,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1328536763034958}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.753589, y: 0.122, z: 5.2094164}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.638026, y: -1.776567, z: -11.1828575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,6 +84,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1328536763034958}
   m_Mesh: {fileID: 4300000, guid: 517cfe0a9858f2d48b73193a890ce355, type: 3}
+--- !u!65 &65102692632602096
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1328536763034958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0515119, y: 0.26183537, z: 1.051512}
+  m_Center: {x: 0.00000011920929, y: -0.000000029802322, z: -0.00000017881393}
 --- !u!95 &95285449657212048
 Animator:
   serializedVersion: 3

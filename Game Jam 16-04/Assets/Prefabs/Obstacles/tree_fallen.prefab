@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33546432240025750}
   - component: {fileID: 23400331467039026}
   - component: {fileID: 95949701224066172}
+  - component: {fileID: 65339075375596140}
   m_Layer: 0
   m_Name: tree_fallen
   m_TagString: Obstacle
@@ -35,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1466466574922706}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.12101739, y: 0.40075684, z: 4.0072455}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.995408, y: -1.5167348, z: -40.643673}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,6 +84,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1466466574922706}
   m_Mesh: {fileID: 4300000, guid: 1c633fe5270c2544484d99bbc440d0e9, type: 3}
+--- !u!65 &65339075375596140
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1466466574922706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.898644, y: 0.7815013, z: 0.6881733}
+  m_Center: {x: 0.39834523, y: 0, z: -0.3577671}
 --- !u!95 &95949701224066172
 Animator:
   serializedVersion: 3
