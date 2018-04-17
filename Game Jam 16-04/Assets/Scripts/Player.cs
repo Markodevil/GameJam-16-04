@@ -56,7 +56,8 @@ public class Player : MonoBehaviour
     //--------------------------------------------------------------------------------------
     void Update()
     {
-        if (!ConveyorBelt.m_bGameEnd)
+        // if the game hasnt ended
+        if (!ConveyorBelt.m_sbGameEnd)
         {
             // if space bar is pressed and the player is grounded
             if (Input.GetMouseButtonDown(0) && IsGrounded())
@@ -88,7 +89,7 @@ public class Player : MonoBehaviour
             // player cant jump
             m_bJump = false;
 
-            // set jump state to single jump
+            // set jump state to single jump if grounded
             if (m_eJumpState == EJumpState.EJUMPSTATE_GROUNDED)
                 m_eJumpState = EJumpState.EJUMPSTATE_SINGLE;
 
@@ -132,11 +133,19 @@ public class Player : MonoBehaviour
         return false;
     }
 
+    //--------------------------------------------------------------------------------------
+    // OnTriggerEnter: OnTriggerEnter is called when the Collider "other" enters the trigger.
+    //
+    // Param:
+    //      other: the colliding object of type Collider
+    //--------------------------------------------------------------------------------------
     private void OnTriggerEnter(Collider other)
     {
+        // if the collision is tag obstacle
         if (other.tag == "Obstacle")
         {
-            ConveyorBelt.m_bGameEnd = true;
+            // game over value is true
+            ConveyorBelt.m_sbGameEnd = true;
         }
     }
 }
