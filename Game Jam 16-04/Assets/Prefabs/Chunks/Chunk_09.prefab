@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 33012842731091478}
   - component: {fileID: 23549875764764842}
   - component: {fileID: 95009506750810752}
+  - component: {fileID: 65711025810742798}
   m_Layer: 0
   m_Name: tire_03
   m_TagString: Obstacle
@@ -139,6 +140,7 @@ GameObject:
   - component: {fileID: 33439989717477892}
   - component: {fileID: 23724664642271134}
   - component: {fileID: 95736831839296904}
+  - component: {fileID: 65258612197120062}
   m_Layer: 0
   m_Name: tire_02
   m_TagString: Obstacle
@@ -157,6 +159,7 @@ GameObject:
   - component: {fileID: 33059533053596084}
   - component: {fileID: 23520411168735684}
   - component: {fileID: 95319087686346668}
+  - component: {fileID: 65374017303073056}
   m_Layer: 0
   m_Name: tire_01
   m_TagString: Obstacle
@@ -1023,6 +1026,42 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65258612197120062
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1468999026826254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0515119, y: 0.26183537, z: 1.051512}
+  m_Center: {x: 0.00000011920929, y: -0.000000029802322, z: -0.00000017881393}
+--- !u!65 &65374017303073056
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475148025920660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0515119, y: 0.26183537, z: 1.051512}
+  m_Center: {x: 0.00000011920929, y: -0.000000029802322, z: -0.00000017881393}
+--- !u!65 &65711025810742798
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405447470607202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0515119, y: 0.26183543, z: 1.0515119}
+  m_Center: {x: 0.00000011920929, y: -0.000000029802315, z: -0.000003993511}
 --- !u!95 &95009506750810752
 Animator:
   serializedVersion: 3
