@@ -64,6 +64,8 @@ MonoBehaviour:
   - {fileID: 1892256314452874, guid: 4231d3d91972ad644813b41ab3df62c5, type: 2}
   - {fileID: 1892256314452874, guid: 4231d3d91972ad644813b41ab3df62c5, type: 2}
   - {fileID: 1892256314452874, guid: 4231d3d91972ad644813b41ab3df62c5, type: 2}
+  - {fileID: 1892256314452874, guid: 4231d3d91972ad644813b41ab3df62c5, type: 2}
+  - {fileID: 1892256314452874, guid: 4231d3d91972ad644813b41ab3df62c5, type: 2}
   m_agChunks: []
   m_fSpeed: 3
-  m_fNodeLength: 3
+  m_fNodeLength: 6
