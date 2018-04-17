@@ -84,7 +84,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4320653861765546}
   - component: {fileID: 33938446368145904}
-  - component: {fileID: 64665415096639674}
   - component: {fileID: 23670810413292042}
   m_Layer: 0
   m_Name: road_02
@@ -154,7 +153,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4944864830737426}
   - component: {fileID: 33499850979546390}
-  - component: {fileID: 64597762299585368}
   - component: {fileID: 23782587326030934}
   m_Layer: 0
   m_Name: road_01
@@ -632,34 +630,6 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1523735371589272}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &64597762299585368
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1788745600760832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &64665415096639674
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1523735371589272}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!95 &95198702837604104
 Animator:
