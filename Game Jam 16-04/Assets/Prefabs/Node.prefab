@@ -84,7 +84,7 @@ MonoBehaviour:
   - {fileID: 1505310814989630, guid: 0dec7be9b8575b14dac672aac916482a, type: 2}
   - {fileID: 1642799559805410, guid: 1cddc1447460f904fa09ae9834979f33, type: 2}
   - {fileID: 1826688393167096, guid: 3c89aca40803d9642bfe91c9bc72e3cc, type: 2}
-  - {fileID: 1925843003232784, guid: cb1c46be4ff945b41be8977851922da7, type: 2}
+  - {fileID: 0}
   m_bSwitchTiles: 0
   m_bResetNodes: 0
   m_nPoolSize: 4
