@@ -65,10 +65,7 @@ public class Node : MonoBehaviour
     // Update: Function that calls each frame to update game objects.
     //--------------------------------------------------------------------------------------
     void Update()
-    {
-        // move the nodes on the conveyorbelt
-        transform.position -= new Vector3(0, 0, ConveyorBelt.m_sfStaticSpeed) * Time.deltaTime;
-            
+    {            
         // if switch tiles is true
         if (m_bSwitchTiles)
         {
@@ -89,17 +86,18 @@ public class Node : MonoBehaviour
             // set the switch tile back to false
             m_bSwitchTiles = false;
         }
-
         // if reset node is true
-        if (m_bResetNodes)
+        else if (m_bResetNodes)
         {
             // bring back to the end of the conveyorbelt chain
-            transform.position = new Vector3(0, 0, ConveyorBelt.m_sfStaticLength * ConveyorBelt.m_sfNodeArraySize);
+            transform.position += new Vector3(0, 0, ConveyorBelt.m_sfStaticLength * ConveyorBelt.m_sfNodeArraySize);
 
             // set reset node back to false
             m_bResetNodes = false;
-        }        
+        }
 
+
+        Move();
     }
 
     //--------------------------------------------------------------------------------------
@@ -117,5 +115,11 @@ public class Node : MonoBehaviour
             m_bSwitchTiles = true;
             m_bResetNodes = true;
         }
+    }
+
+    public void Move()
+    {
+        // move the nodes on the conveyorbelt
+        transform.position -= new Vector3(0, 0, ConveyorBelt.m_sfStaticSpeed) * Time.deltaTime;
     }
 }
