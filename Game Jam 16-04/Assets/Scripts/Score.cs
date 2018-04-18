@@ -62,25 +62,18 @@ public class Score : MonoBehaviour
         // Apply the score to the text object
         m_tTextScore.text = string.Format("Score: {0}", nTmpScore);
 
-
-
-        
-
-        
-
+        // if gameover is true
         if (ConveyorBelt.m_sbGameEnd)
         {
+            // start timer
             m_fTimer += Time.deltaTime;
 
+            // if the timer is over 2
             if (m_fTimer > 2)
             {
+                // set gameover canvas to true
                 m_gGameOverCanvas.SetActive(true);
             }
         }
-
-
-
-
-
     }
 }

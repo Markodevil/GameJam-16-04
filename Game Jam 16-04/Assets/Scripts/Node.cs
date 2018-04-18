@@ -96,7 +96,7 @@ public class Node : MonoBehaviour
             m_bResetNodes = false;
         }
 
-
+        // move the node
         Move();
     }
 
@@ -117,6 +117,9 @@ public class Node : MonoBehaviour
         }
     }
 
+    //--------------------------------------------------------------------------------------
+    // Move: Function for moving the node across the conveyorbelt
+    //--------------------------------------------------------------------------------------
     public void Move()
     {
         // move the nodes on the conveyorbelt

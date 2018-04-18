@@ -87,9 +87,13 @@ public class Player : MonoBehaviour
             }
         }
 
+        // if jump animation is true
         if (m_bJumpAni)
         {
+            // jump animation is false
             m_bJumpAni = false;
+
+            // set animator bool
             GetComponent<Animator>().SetBool("Jump", m_bJumpAni);
         }
     }

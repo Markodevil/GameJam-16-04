@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Designer added code, clean up // TODO
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
