@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114256352348584730}
   - component: {fileID: 54281062417753598}
   m_Layer: 0
-  m_Name: Node
+  m_Name: FirstNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,16 +82,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_agBlueprints:
   - {fileID: 1505310814989630, guid: 0dec7be9b8575b14dac672aac916482a, type: 2}
-  - {fileID: 1642799559805410, guid: 1cddc1447460f904fa09ae9834979f33, type: 2}
-  - {fileID: 1826688393167096, guid: 3c89aca40803d9642bfe91c9bc72e3cc, type: 2}
   - {fileID: 1640354095878052, guid: 080cfb6f495c86c42bbe43f30aee6e15, type: 2}
-  - {fileID: 1012795830080906, guid: b0461f068bafe384a85f78d8ac2878cd, type: 2}
   - {fileID: 1702317368798470, guid: 5746fb0c93bef30468c38ce55e7700e9, type: 2}
   - {fileID: 1765501587818798, guid: ebdd41fdf9ef3d546a3b904925d19543, type: 2}
-  - {fileID: 1339170582337942, guid: 718b1092c9eee0340a88f90045d3a52c, type: 2}
-  - {fileID: 1770153569078408, guid: ff212d278112ada4a84d346adb50d324, type: 2}
   - {fileID: 1725094072111656, guid: b517c5dab9a880a43adde90588662baa, type: 2}
+  - {fileID: 1040636148385668, guid: b11a0e894e6cbb749b9a644c0426f4ae, type: 2}
+  - {fileID: 1923613252541926, guid: 9cfde34ff3f60a347b0128e6d6320a2d, type: 2}
   m_bSwitchTiles: 0
   m_bResetNodes: 0
-  m_nPoolSize: 10
+  m_nPoolSize: 7
   m_nChainPosition: 13
