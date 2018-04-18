@@ -87,7 +87,7 @@ public class Node : MonoBehaviour
             m_bSwitchTiles = false;
         }
         // if reset node is true
-        else if (m_bResetNodes)
+        if (m_bResetNodes)
         {
             // bring back to the end of the conveyorbelt chain
             transform.position += new Vector3(0, 0, ConveyorBelt.m_sfStaticLength * ConveyorBelt.m_sfNodeArraySize);
