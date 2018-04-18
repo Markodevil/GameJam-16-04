@@ -22,6 +22,10 @@ public class Player : MonoBehaviour
     //--------------------------------------------------------------------------------------
     // public int for jumping force
     public int m_nForceConst = 500;
+
+    // public bool for jumping animation
+    public bool m_bJumpAni = false;
+
     //--------------------------------------------------------------------------------------
 
     // PRIVATE VALUES //
@@ -59,11 +63,13 @@ public class Player : MonoBehaviour
         // if the game hasnt ended
         if (!ConveyorBelt.m_sbGameEnd)
         {
+            
             // if space bar is pressed and the player is grounded
             if (Input.GetMouseButtonDown(0) && IsGrounded())
             {
                 // can jump bool is true
                 m_bJump = true;
+                m_bJumpAni = true;
             }
 
             // if space bar is pressed and the player is grounded
@@ -71,10 +77,15 @@ public class Player : MonoBehaviour
             {
                 // can jump bool is true
                 m_bJump = true;
-
+                m_bJumpAni = true;
                 // set jump state to double
                 m_eJumpState = EJumpState.EJUMPSTATE_DOUBLE;
             }
+        }
+
+        if (m_bJumpAni)
+        {
+            m_bJumpAni = false;
         }
     }
 

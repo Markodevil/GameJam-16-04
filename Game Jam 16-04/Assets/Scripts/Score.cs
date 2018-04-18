@@ -53,6 +53,6 @@ public class Score : MonoBehaviour
         int nTmpScore = Mathf.FloorToInt(m_fScore);
 
         // Apply the score to the text object
-        m_tTextScore.text = string.Format("{0}", nTmpScore);
+        m_tTextScore.text = string.Format("Score: {0}", nTmpScore);
     }
 }
