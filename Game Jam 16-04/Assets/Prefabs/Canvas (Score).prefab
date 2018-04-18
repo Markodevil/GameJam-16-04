@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 224793536070663888}
   - component: {fileID: 222544074338348058}
   - component: {fileID: 114512022279028454}
+  - component: {fileID: 114380811773490108}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -57,7 +58,7 @@ GameObject:
   - component: {fileID: 114446293441732002}
   - component: {fileID: 114365584238736302}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas (Score)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,6 +80,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114380811773490108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1315359357420240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52541a2b1e09f64449890a0002be0702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fScoreIncrease: 5
+  m_fSpeedIncrease: 0.5
+  m_tTextScore: {fileID: 114512022279028454}
 --- !u!114 &114446293441732002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,7 +169,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a42c66d617fd70c4dacf1d8d4ffc3122, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a7bb759a71f75ea448f919a659b3bd52, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -229,7 +244,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -18.7}
+  m_AnchoredPosition: {x: 83.6, y: -17.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224793536070663888
