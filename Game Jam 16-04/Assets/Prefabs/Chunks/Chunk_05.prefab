@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 23115721963175664}
   - component: {fileID: 95210431637468406}
   - component: {fileID: 65836161953685596}
-  - component: {fileID: 65037138942057140}
   m_Layer: 0
   m_Name: concrete_barrier
   m_TagString: Obstacle
@@ -281,7 +280,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1012795830080906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4430401365681256}
@@ -561,18 +560,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1447741748986256}
   m_Mesh: {fileID: 4300000, guid: 1cfbe386935d31f4d96b261dc12c611e, type: 3}
---- !u!65 &65037138942057140
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1057199326983894}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0821817, y: 1.1277635, z: 0.63874704}
-  m_Center: {x: 0, y: -0.063881755, z: 0}
 --- !u!65 &65836161953685596
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -583,8 +570,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0821817, y: 1.1277635, z: 0.63874704}
-  m_Center: {x: 0, y: -0.063881755, z: 0}
+  m_Size: {x: 2.0821817, y: 0.9567113, z: 0.63874704}
+  m_Center: {x: 0, y: -0.14940786, z: 0}
 --- !u!95 &95210431637468406
 Animator:
   serializedVersion: 3
