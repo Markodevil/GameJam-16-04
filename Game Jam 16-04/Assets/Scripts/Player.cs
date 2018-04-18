@@ -53,6 +53,9 @@ public class Player : MonoBehaviour
 
         // Get the capsule collider of the player
         m_cPlayerCollider = GetComponent<CapsuleCollider>();
+
+        // make sure that the animator knows that it shouldn't play death animation
+        GetComponent<Animator>().SetBool("Death", ConveyorBelt.m_sbGameEnd);
     }
 
     //--------------------------------------------------------------------------------------
@@ -70,6 +73,7 @@ public class Player : MonoBehaviour
                 // can jump bool is true
                 m_bJump = true;
                 m_bJumpAni = true;
+                GetComponent<Animator>().SetBool("Jump", m_bJumpAni);
             }
 
             // if space bar is pressed and the player is grounded
@@ -86,6 +90,7 @@ public class Player : MonoBehaviour
         if (m_bJumpAni)
         {
             m_bJumpAni = false;
+            GetComponent<Animator>().SetBool("Jump", m_bJumpAni);
         }
     }
 
@@ -157,6 +162,8 @@ public class Player : MonoBehaviour
         {
             // game over value is true
             ConveyorBelt.m_sbGameEnd = true;
+            // play death animation
+            GetComponent<Animator>().SetBool("Death", ConveyorBelt.m_sbGameEnd);
         }
     }
 }
