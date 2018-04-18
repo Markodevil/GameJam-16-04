@@ -21,6 +21,12 @@ public class Score : MonoBehaviour
     // public text object value.
     public Text m_tTextScore;
 
+    // timer for the gameover canvas
+    public float m_fTimer;
+
+    // public gameobjcet for the gameover canvas
+    public GameObject m_gGameOverCanvas;
+
     //--------------------------------------------------------------------------------------
     // initialization.
     //--------------------------------------------------------------------------------------
@@ -28,6 +34,7 @@ public class Score : MonoBehaviour
     {
         // set default value
         m_fScore = 0.0f;
+        m_fTimer = 0.0f;
 	}
 
     //--------------------------------------------------------------------------------------
@@ -54,5 +61,26 @@ public class Score : MonoBehaviour
 
         // Apply the score to the text object
         m_tTextScore.text = string.Format("Score: {0}", nTmpScore);
+
+
+
+        
+
+        
+
+        if (ConveyorBelt.m_sbGameEnd)
+        {
+            m_fTimer += Time.deltaTime;
+
+            if (m_fTimer > 2)
+            {
+                m_gGameOverCanvas.SetActive(true);
+            }
+        }
+
+
+
+
+
     }
 }

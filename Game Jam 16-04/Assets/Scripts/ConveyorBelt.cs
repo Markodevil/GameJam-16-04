@@ -41,7 +41,8 @@ public class ConveyorBelt : MonoBehaviour
     //--------------------------------------------------------------------------------------
     void Awake()
     {
-        // set inital speed of the conveyorbelt
+        // set inital values of conveyorbelt
+        m_sbGameEnd = false;
         SetSpeed(m_fSpeed);
 
         // set static values
